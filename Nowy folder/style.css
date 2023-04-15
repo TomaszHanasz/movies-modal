@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 0 auto;
+  position: relative;
+  background-image: linear-gradient(
+    180deg,
+    hsl(215deg 92% 71%) 0%,
+    hsl(202deg 100% 63%) 11%,
+    hsl(192deg 100% 49%) 22%,
+    hsl(187deg 100% 47%) 33%,
+    hsl(181deg 100% 44%) 44%,
+    hsl(170deg 75% 59%) 56%,
+    hsl(151deg 73% 70%) 67%,
+    hsl(115deg 70% 79%) 78%,
+    hsl(80deg 76% 76%) 89%,
+    hsl(55deg 90% 77%) 100%
+  );
+}
+
+nav:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 97%;
+  border-bottom: 2px solid rgb(3, 3, 3);
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  flex-grow: 0.1;
+  text-align: center;
+  margin: 10px;
+}
+
+nav span {
+  flex-grow: 2;
+}
+
+a {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: rgb(0, 0, 0);
+  color: #dd13c2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 0 2%;
+}
+
+.logo {
+  flex-grow: 1;
+  color: rgb(2, 2, 2);
+  font-size: 15vw;
+  text-shadow: 12px 12px 0px rgba(19, 37, 111, 0.6);
+  transition: all 0.5s ease-out;
+}
+
+.logo-text {
+  font-family: "Dancing Script", sans-serif;
+  flex-grow: 1;
+  text-align: center;
+  color: rgb(240, 0, 0);
+  font-size: 12vw;
+  bottom: 70px;
+  right: 100px;
+  transition: all 0.5s ease-out;
+}
+
+movies {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+category:before {
+  content: "";
+  display: block;
+  margin: 45px auto;
+  width: 97%;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+category {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.movie-info {
+  background-color: rgb(34, 34, 34);
+  width: 190px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  color: white;
+}
+
+.movie-info img {
+  position: relative;
+  width: 190px;
+  height: 250px;
+  object-fit: fill;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.movie-info::after {
+  font-size: 2rem;
+  color: red;
+  content: "❤";
+  position: absolute;
+}
+
+.movie-info div {
+  padding: 10px 10px 10px 0;
+}
+
+.movie-info button {
+  width: 180px;
+  margin: 10px auto;
+}
+
+.watch-later {
+  color: rgb(219, 219, 219);
+  text-align: center;
+}
+
+body div header p span {
+  display: inline-block;
+}
+
+movies:after {
+  content: "";
+  display: block;
+  margin: 45px auto;
+  width: 97%;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.play {
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10%;
+}
+
+iframe {
+  display: block;
+  margin: 20px auto;
+  width: 320px;
+  height: 240px;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.tooltip h3 {
+  font-size: 1rem;
+  margin: 12px 0;
+}
+
+.tooltip .right {
+  min-width: 200px;
+  max-width: 400px;
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  transform: translate(0, -50%);
+  padding: 0;
+  color: #eeeeee;
+  background-color: #444444;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.tooltip:hover .right {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .right img {
+  object-fit: cover;
+  width: 200px;
+  border-radius: 8px 8px 0 0;
+}
+.tooltip .text-content {
+  padding: 10px 20px;
+}
+
+.tooltip .right i {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.tooltip .right i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%) rotate(-45deg);
+  background-color: #444444;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+.watch-flex {
+  display: flex;
+}
+
+.movie-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: rgb(194, 233, 248);
+  padding: 2rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 21px 18px 22px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 21px 18px 22px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 21px 18px 22px 5px rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+
+.movie-modal p {
+  font-size: 1.5rem;
+  padding-right: 50px;
+}
+
+.summary img {
+  object-fit: cover;
+  width: 190px;
+  height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.summary ul {
+  padding-left: 20px;
+}
+
+.summary li {
+  padding-bottom: 10px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+footer {
+  margin-left: 1vw;
+  color: steelblue;
+}
+
+button {
+  background-image: linear-gradient(
+    85deg,
+    hsl(240deg 81% 78%) 0%,
+    hsl(274deg 79% 76%) 11%,
+    hsl(308deg 84% 75%) 22%,
+    hsl(323deg 100% 76%) 33%,
+    hsl(337deg 100% 76%) 44%,
+    hsl(358deg 100% 78%) 56%,
+    hsl(20deg 100% 72%) 67%,
+    hsl(36deg 100% 65%) 78%,
+    hsl(47deg 100% 57%) 89%,
+    hsl(55deg 100% 50%) 100%
+  );
+  font-weight: 800;
+  border-radius: 5px;
+  border: 1px solid rgb(29, 50, 68);
+}
+
+@media screen and (max-width: 1050px) {
+  .movie-modal {
+    width: 100%;
+  }
+
+  .movie-modal p {
+    font-size: 1.1rem;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .watch-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .movie-modal p {
+    font-size: 0.8rem;
+    padding-right: 50px;
+    padding-top: 20px;
+  }
+
+  .summary {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+  }
+
+  .summary img {
+    width: 120px;
+    height: 180px;
+  }
+}

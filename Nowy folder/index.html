@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>🎞Movies... Very Nice!</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Shows</a></li>
+          <span></span>
+          <li>
+            <a href="#">🗨</a>
+          </li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <header>
+        <h1 class="logo">Movies...</h1>
+        <p class="logo-text">🎥 Very Nice!</p>
+      </header>
+      <category><h2>⭐ Popular movies:</h2></category>
+      <movies>
+        <div class="movie-info">
+          <img src="./images/thething.jpg" />
+          <div>🍌 8.2</div>
+          <div class="tooltip">
+            1. The Thing
+            <div class="right">
+              <img src="./images/thething(2).jpg" />
+              <div class="text-content">
+                <h3>The Thing</h3>
+                <ul>
+                  <li>Genres: <u>Horror</u>, <u>Mystery</u>, <u>Sci-Fi</u></li>
+                  <li>Duration: 1h49m</li>
+                  <li>Director: <u>John Carpenter</u></li>
+                  <li>
+                    Starring: <u>Kurt Russell</u>, <u>Wilford Brimley</u>,
+                    <u>Keith David</u>
+                  </li>
+                </ul>
+              </div>
+              <i></i>
+            </div>
+          </div>
+          <button class="watch-movie">Watch movie</button>
+          <div class="watch-later">+ Watch Later</div>
+        </div>
+        <div class="movie-info">
+          <img src="./images/evildead2.jpg" />
+          <div>🍌 7.7</div>
+          <div class="tooltip">
+            2. Evil Dead 2
+            <div class="right">
+              <img src="./images/evildead2(2).jpg" />
+              <div class="text-content">
+                <h3>Evil Dead 2</h3>
+                <ul>
+                  <li>Genres: <u>Horror</u></li>
+                  <li>Duration: 1h24m</li>
+                  <li>Director: <u>Sam Raimi</u></li>
+                  <li>
+                    Starring: <u>Bruce Campbell</u>, <u>Sarah Berry</u>,
+                    <u>Dan Hicks</u>
+                  </li>
+                </ul>
+              </div>
+              <i></i>
+            </div>
+          </div>
+          <button class="watch-movie">Watch movie</button>
+          <div class="watch-later">+ Watch Later</div>
+        </div>
+        <div class="movie-info">
+          <img src="./images/hellraiser.jpg" />
+          <div>🍌 6.9</div>
+          <div class="tooltip">
+            3. Hellraiser
+            <div class="right">
+              <img src="./images/hellraiser(2).jpg" />
+              <div class="text-content">
+                <h3>Hellraiser</h3>
+                <ul>
+                  <li>Genres: <u>Horror</u>, <u>Thriller</u></li>
+                  <li>Duration: 1h34m</li>
+                  <li>Director: <u>Clive Barker</u></li>
+                  <li>
+                    Starring: <u>Andrew Robinson</u>, <u>Clare Higgins</u>,
+                    <u>Ashley Laurence</u>
+                  </li>
+                </ul>
+              </div>
+              <i></i>
+            </div>
+          </div>
+          <button class="watch-movie">Watch movie</button>
+          <div class="watch-later">+ Watch Later</div>
+        </div>
+        <div class="movie-info">
+          <img src="./images/borat.jpg" />
+          <div>🍌 7.4</div>
+          <div class="tooltip">
+            4. Borat
+            <div class="right">
+              <img src="./images/borat(2).jpg" />
+              <div class="text-content">
+                <h3>Borat</h3>
+                <ul>
+                  <li>Genres: <u>Comedy</u></li>
+                  <li>Duration: 1h24m</li>
+                  <li>Director: <u>Larry Charles</u></li>
+                  <li>
+                    Starring: <u>Sacha Baron Cohen</u>, <u>Anthony Hines</u>,
+                    <u>Peter Baynham</u>
+                  </li>
+                </ul>
+              </div>
+              <i></i>
+            </div>
+          </div>
+          <button class="watch-movie">Watch movie</button>
+          <div class="watch-later">+ Watch Later</div>
+        </div>
+        <div class="movie-info">
+          <img src="./images/robocop.jpg" />
+          <div>🍌 7.6</div>
+          <div class="tooltip">
+            5. Robocop
+            <div class="right">
+              <img src="./images/robocop(2).jpg" />
+              <div class="text-content">
+                <h3>Robocop</h3>
+                <ul>
+                  <li>Genres: <u>Action</u>, <u>Thriller</u>, <u>Sci-Fi</u></li>
+                  <li>Duration: 1h42m</li>
+                  <li>Director: <u>Paul Verhoeven</u></li>
+                  <li>
+                    Starring: <u>Peter Weller</u>, <u>Nancy Allen</u>,
+                    <u>Dan O'Herlihy</u>
+                  </li>
+                </ul>
+              </div>
+              <i></i>
+            </div>
+          </div>
+          <button class="watch-movie">Watch movie</button>
+          <div class="watch-later">+ Watch Later</div>
+        </div>
+      </movies>
+      <div class="movie-modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="summary">
+          <img src="./images/thething.jpg" />
+          <ul>
+            <li>Genres: <u>Horror</u>, <u>Mystery</u>, <u>Sci-Fi</u></li>
+            <li>Duration: 1h49m</li>
+            <li>Director: <u>John Carpenter</u></li>
+            <li>
+              Starring: <u>Kurt Russell</u>, <u>Wilford Brimley</u>,
+              <u>Keith David</u>
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          <b>The Thing</b>
+          <br />
+          A US research station, Antarctica, early-winter 1982. The base is
+          suddenly buzzed by a helicopter from the nearby Norwegian research
+          station. They are trying to kill a dog that has escaped from their
+          base. After the destruction of the Norwegian chopper the members of
+          the US team fly to the Norwegian base, only to discover them all dead
+          or missing. They do find the remains of a strange creature the
+          Norwegians burned. The Americans take it to their base and deduce that
+          it is an alien life form. After a while it is apparent that the alien
+          can take over and assimilate into other life forms, including humans,
+          and can spread like a virus.
+          <button class="play">Play movie ▷</button>
+          <iframe
+            class="trailer"
+            src="https://www.youtube.com/embed/5ftmr17M-a4"
+          >
+          </iframe>
+        </p>
+      </div>
+      <div class="movie-modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="summary">
+          <img src="./images/evildead2.jpg" />
+          <ul>
+            <li>Genres: <u>Horror</u></li>
+            <li>Duration: 1h24m</li>
+            <li>Director: <u>Sam Raimi</u></li>
+            <li>
+              Starring: <u>Bruce Campbell</u>, <u>Sarah Berry</u>,
+              <u>Dan Hicks</u>
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          <b>Evil Dead 2</b>
+          <br />
+          Ashley Williams travels to a secluded cabin in the woods with his
+          girlfriend Linda where they find a tape recording of a professor and a
+          book of evil. This unleashes a bunch of evil spirits that constantly
+          terrorize Ash. Meanwhile a journalist comes to the area to study the
+          book of evil. Ash and her end up having to survive this swarm of evil
+          until morning comes.
+          <button class="play">Play movie ▷</button>
+          <iframe
+            class="trailer"
+            src="https://www.youtube.com/embed/6lM3NPeEG24"
+          >
+          </iframe>
+        </p>
+      </div>
+      <div class="movie-modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="summary">
+          <img src="./images/hellraiser.jpg" />
+          <ul>
+            <li>Genres: <u>Horror</u>, <u>Thriller</u></li>
+            <li>Duration: 1h34m</li>
+            <li>Director: <u>Clive Barker</u></li>
+            <li>
+              Starring: <u>Andrew Robinson</u>, <u>Clare Higgins</u>,
+              <u>Ashley Laurence</u>
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          <b>Hellraiser</b>
+          <br />
+          When Kirsty's father, Larry, and stepmother, Julia, move into Larry's
+          childhood home, Kirsty and her boyfriend take a room nearby.
+          Unfortunately for all involved, Larry's house is already occupied:
+          before the family's arrival, Larry's disreputable brother, Frank, used
+          a supernatural puzzle box to summon a gang of other-dimensional demon
+          sadists. Now, Frank requires a series of blood sacrifices to escape
+          the clutches of Pinhead and the cenobites.
+          <button class="play">Play movie ▷</button>
+          <iframe
+            class="trailer"
+            src="https://www.youtube.com/embed/OpEQNEHKdXg"
+          >
+          </iframe>
+        </p>
+      </div>
+      <div class="movie-modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="summary">
+          <img src="./images/borat.jpg" />
+          <ul>
+            <li>Genres: <u>Comedy</u></li>
+            <li>Duration: 1h24m</li>
+            <li>Director: <u>Larry Charles</u></li>
+            <li>
+              Starring: <u>Sacha Baron Cohen</u>, <u>Anthony Hines</u>,
+              <u>Peter Baynham</u>
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          <b>Borat</b>
+          <br />
+          Borat Sagdiyev is a TV reporter of a popular show in Kazakhstan as
+          Kazakhstan's sixth most famous man and a leading journalist. He is
+          sent from his home to America by his government to make a documentary
+          about American society and culture. Borat takes a course in New York
+          City to understand American humor. While watching Baywatch on TV,
+          Borat discovers how beautiful their women are in the form of C. J.
+          Parker, who was played by actress Pamela Anderson who hails from
+          Malibu, California. He decides to go on a cross-country road trip to
+          California in a quest to make her his wife and take her back to his
+          country.
+          <button class="play">Play movie ▷</button>
+          <iframe
+            class="trailer"
+            src="https://www.youtube.com/embed/pteiNZIeCW0"
+          >
+          </iframe>
+        </p>
+      </div>
+      <div class="movie-modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="summary">
+          <img src="./images/robocop.jpg" />
+          <ul>
+            <li>Genres: <u>Action</u>, <u>Thriller</u>, <u>Sci-Fi</u></li>
+            <li>Duration: 1h42m</li>
+            <li>Director: <u>Paul Verhoeven</u></li>
+            <li>
+              Starring: <u>Peter Weller</u>, <u>Nancy Allen</u>,
+              <u>Dan O'Herlihy</u>
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          <b>Robocop</b>
+          <br />
+          In a violent, near-apocalyptic Detroit, evil corporation Omni Consumer
+          Products wins a contract from the city government to privatize the
+          police force. To test their crime-eradicating cyborgs, the company
+          leads street cop Alex Murphy into an armed confrontation with crime
+          lord Boddicker so they can use his body to support their untested
+          RoboCop prototype. But when RoboCop learns of the company's nefarious
+          plans, he turns on his masters.
+          <button class="play">Play movie ▷</button>
+          <iframe
+            class="trailer"
+            src="https://www.youtube.com/embed/IqvRDhW-XVA"
+          >
+          </iframe>
+        </p>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="dom.js"></script>
+  </body>
+</html>
